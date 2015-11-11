@@ -10,7 +10,7 @@ API Documentation: http://forismatic.com/en/api/
 >3. python notify-quote.py
 
 #Configuration
-Two languages "English"  and "Russian' are supported, language can be configured using **lang** property in ***config.json*** to en or ru for English or Russian respectively.
+Two languages "English"  and "Russian" are supported, language can be configured using **lang** property in ***config.json*** to en or ru for English or Russian respectively.
 
 #TO DO:
 >1. Autostart Script
