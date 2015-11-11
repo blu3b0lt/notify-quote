@@ -10,7 +10,9 @@ API Documentation: http://forismatic.com/en/api/
 >3. python notify-quote.py
 
 #Configuration
-Two languages "English"  and "Russian" are supported, language can be configured using **lang** property in ***config.json*** to en or ru for English or Russian respectively.
+1. Two languages "English"  and "Russian" are supported, language can be configured using **lang** property in ***config.json*** to en or ru for English or Russian respectively.
+
+2. Delay between quotes is controlled by **delay** property, specify time in seconds.
 
 #TO DO:
 >1. Offline Support by caching quotes
