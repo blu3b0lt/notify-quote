@@ -13,7 +13,8 @@ API Documentation: http://forismatic.com/en/api/
 Two languages "English"  and "Russian" are supported, language can be configured using **lang** property in ***config.json*** to en or ru for English or Russian respectively.
 
 #TO DO:
->1. Autostart Script
+>1. Offline Support by caching quotes
+>2. Autostart Script
 
 
 

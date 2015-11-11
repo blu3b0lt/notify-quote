@@ -20,13 +20,18 @@ if os.path.exists(configFilePath) != False:
 	configFile = open(configFilePath, "r")
 	configFileJson = json.loads(configFile.read())
 	lang = configFileJson['lang']
+	delay = configFileJson['delay']
+	delay = int(delay)
 	configFile.close()
 else:
 	lang = "en"
+	delay = 240
 while True:
 	response = requests.get("http://api.forismatic.com/api/1.0/?method=getQuote&lang="+lang+"&format=json")
 	responseJson = json.loads(response.text)
 	author = responseJson['quoteAuthor']
 	quote = responseJson['quoteText']
+	if author == "":
+		author = "Anonymous"
 	subprocess.call(["notify-send", "-u", "normal", "-t", "10000", "-c", "Quotes", "-i", iconPath, author+" says" , '" '+quote+' "'])
-	time.sleep(2400)
+	time.sleep(delay)
